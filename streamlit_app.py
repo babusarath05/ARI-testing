@@ -7,7 +7,7 @@ Created on Wed Oct  2 12:38:53 2024
 
 import streamlit as st
 
-st.title("Echo Bot")
+st.title("ARI testing Echo Bot")
 
 # Initialize chat history
 if "messages" not in st.session_state:
