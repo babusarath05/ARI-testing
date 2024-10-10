@@ -86,7 +86,7 @@ with st.sidebar:
     st.markdown(f"3 web application audit files")
     #app_reports = [i for i in audit_files if 'web' not in i.lower()]
     st.markdown(f"1 application audit files")
-    audit_file = st.selectbox("Choose the Audit File",['-']+audit_files)
+    #audit_file = st.selectbox("Choose the Audit File",['-']+audit_files)
     
     today = datetime.datetime.now()
     one_month_before_today = today.month-1
