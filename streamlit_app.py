@@ -13,7 +13,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 import streamlit as st
-import datetime
+# import datetime
 import google.generativeai as genai
 
 
@@ -90,18 +90,18 @@ with st.sidebar:
     #audit_file = st.selectbox("Choose the Audit File",['-']+audit_files)
     audit_file = st.file_uploader("Choose a file",type=['pdf'])
     
-    today = datetime.datetime.now()
-    one_month_before_today = today.month-1
-    one_month_before_today = datetime.date(today.year,today.month-1,1)
+    # today = datetime.datetime.now()
+    # one_month_before_today = today.month-1
+    # one_month_before_today = datetime.date(today.year,today.month-1,1)
     
-    five_year_before = today.year-5
-    five_year_before = datetime.date(five_year_before,1,1)
+    # five_year_before = today.year-5
+    # five_year_before = datetime.date(five_year_before,1,1)
     
-    d = st.date_input(
-        "Select your datefilter",
-        (one_month_before_today,today),
-        five_year_before,today,
-        format="DD.MM.YYYY")
+    # d = st.date_input(
+    #     "Select your datefilter",
+    #     (one_month_before_today,today),
+    #     five_year_before,today,
+    #     format="DD.MM.YYYY")
     
     st.markdown(":white_check_mark: CVE 2024 report")
     st.markdown(":gray[CWE 2024 report]")
