@@ -88,6 +88,7 @@ with st.sidebar:
     #app_reports = [i for i in audit_files if 'web' not in i.lower()]
     st.markdown(f"1 application audit files")
     #audit_file = st.selectbox("Choose the Audit File",['-']+audit_files)
+    audit_file = st.file_uploader("Choose a file",type=['pdf'])
     
     today = datetime.datetime.now()
     one_month_before_today = today.month-1
@@ -106,7 +107,7 @@ with st.sidebar:
     st.markdown(":gray[CWE 2024 report]")
     # audit_file = st.selectbox("Choose the Audit File",['-']+audit_files)
     gemini_api_key = st.text_input("Enter your gemini api key here",type="password")
-    audit_file = st.file_uploader("Choose a file",type=['pdf'])
+    
     
     
         
