@@ -83,6 +83,7 @@ st.title(":mag: ARI: Audit Report Interpreter AI")
 # st.markdown(page_bg_img, unsafe_allow_html=True)
 
 with st.sidebar:
+    gemini_api_key = st.text_input("Enter your gemini api key here",type="password")
     #web_reports = [i for i in audit_files if 'web' in i.lower()]
     st.markdown(f"3 web application audit files")
     #app_reports = [i for i in audit_files if 'web' not in i.lower()]
@@ -105,8 +106,12 @@ with st.sidebar:
     
     st.markdown(":white_check_mark: CVE 2024 report")
     st.markdown(":gray[CWE 2024 report]")
+    st.markdown(":gray[NVD 2024 report]")
+    st.markdown(":gray[OWASP 2024 report]")
+    st.markdown(":gray[NIST 2024 report]")
+    st.markdown(":gray[MITRE 2024 report]")
     # audit_file = st.selectbox("Choose the Audit File",['-']+audit_files)
-    gemini_api_key = st.text_input("Enter your gemini api key here",type="password")
+    
     
     
     
