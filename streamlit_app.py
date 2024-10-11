@@ -85,9 +85,9 @@ st.title(":mag: ARI: Audit Report Interpreter AI")
 with st.sidebar:
     gemini_api_key = st.text_input("Enter your gemini api key here",type="password")
     #web_reports = [i for i in audit_files if 'web' in i.lower()]
-    st.markdown(f"3 web application audit files")
+    st.markdown(f"0 web application audit files present")
     #app_reports = [i for i in audit_files if 'web' not in i.lower()]
-    st.markdown(f"1 application audit files")
+    st.markdown(f"0 application audit files present")
     #audit_file = st.selectbox("Choose the Audit File",['-']+audit_files)
     audit_file = st.file_uploader("Choose a file",type=['pdf'])
     
